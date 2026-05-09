@@ -1,18 +1,28 @@
 from kafka import KafkaProducer
+from prometheus_client import start_http_server, Counter
 import json
 import time
 import random
 
+messages_sent = Counter(
+    'messages_sent_total',
+    'Total messages sent'
+)
+
+start_http_server(8000)
+
 while True:
     try:
         producer = KafkaProducer(
-            bootstrap_servers='kafka-service:9092',
+            bootstrap_servers='kafka:9092',
             value_serializer=lambda v: json.dumps(v).encode('utf-8')
         )
-        print("Connected to Kafka!")
+
+        print("Connected to Kafka!", flush=True)
         break
-    except:
-        print("Waiting for Kafka...")
+
+    except Exception as e:
+        print(f"Waiting for Kafka... {e}", flush=True)
         time.sleep(5)
 
 users = ["user1", "user2", "user3"]
@@ -26,6 +36,9 @@ while True:
     }
 
     producer.send("user_activity", data)
-    print(f"Sent: {data}")
+
+    messages_sent.inc()
+
+    print(f"Sent: {data}", flush=True)
 
     time.sleep(2)
