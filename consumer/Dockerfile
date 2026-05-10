@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install kafka-python
+RUN pip install kafka-python prometheus-client
+
+ENV PYTHONUNBUFFERED=1
 
 CMD ["python", "consumer.py"]

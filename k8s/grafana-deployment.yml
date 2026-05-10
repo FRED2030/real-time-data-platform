@@ -2,22 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: producer
+  name: grafana
 
 spec:
   replicas: 1
 
   selector:
     matchLabels:
-      app: producer
+      app: grafana
 
   template:
     metadata:
       labels:
-        app: producer
+        app: grafana
 
     spec:
       containers:
-      - name: producer
-        image: appscations/producer:latest
-        imagePullPolicy: Always
+        - name: grafana
+          image: grafana/grafana
+
+          ports:
+            - containerPort: 3000
