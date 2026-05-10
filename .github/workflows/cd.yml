@@ -1,0 +1,39 @@
+name: CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Producer Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/producer:latest ./producer
+
+      - name: Push Producer Image
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/producer:latest
+
+      - name: Build Consumer Image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/consumer:latest ./consumer
+
+      - name: Push Consumer Image
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/consumer:latest
