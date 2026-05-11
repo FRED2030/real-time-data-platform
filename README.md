@@ -6,11 +6,17 @@ This project simulates a real-world enterprise event-driven platform inspired by
 The platform processes streaming events using microservices architecture and demonstrates how to:
 
 Containerize applications
+
 Automate infrastructure
+
 Configure servers
+
 Deploy to Kubernetes
-Monitor system health
+
+Monitor system 
+
 Implement autoscaling
+
 Operate in AWS cloud infrastructure
 
 ### 🏗️ Architecture
@@ -119,8 +125,11 @@ The producer and consumer applications were containerized using Docker.
 
 ### Purpose
 Standardized runtime environments
+
 Service isolation
+
 Portable deployments
+
 Build Containers
 
 docker build -t producer ./producerdocker build -t consumer ./consumer
@@ -129,21 +138,29 @@ docker build -t producer ./producerdocker build -t consumer ./consumer
 Implemented CI/CD using GitHub Actions.
 
 ## CI Pipeline
+
 Builds Docker images
+
 Validates configurations
+
 Ensures deployment consistency
 
 ## CD Pipeline
 Pushes images to Docker Hub
+
 Automates deployment workflows
 
 ## ☁️ Step 3 — Infrastructure as Code
 Provisioned AWS infrastructure using Terraform.
 
 ### Terraform Responsibilities
+
 Create EC2 resources
+
 Configure security groups
+
 Provision cloud infrastructure
+
 Deploy Infrastructure
 
 terraform init
@@ -153,9 +170,13 @@ terraform apply
 Configured infrastructure using Ansible.
 
 ### Ansible Responsibilities
+
 Install Docker
+
 Configure server environment
+
 Prepare deployment runtime
+
 Run Playbook
 
 ansible-playbook -i inventory.ini setup.yml
@@ -164,10 +185,15 @@ ansible-playbook -i inventory.ini setup.yml
 Migrated services from Docker Compose to Kubernetes.
 
 ### Kubernetes Features
+
 Self-healing pods
+
 Declarative deployments
+
 Service discovery
+
 Horizontal scaling
+
 Deploy Workloads
 
 kubectl apply -f k8s/
@@ -176,9 +202,13 @@ kubectl apply -f k8s/
 Implemented observability using Prometheus and Grafana.
 
 Metrics Collected
+
 Messages processed
+
 Alerts triggered
+
 Service activity
+
 Monitoring Stack
 
 Prometheus → metric collection
@@ -189,8 +219,11 @@ Deployed Kubernetes workloads to AWS EKS.
 
 ### Benefits
 Managed Kubernetes control plane
+
 Cloud-native scalability
+
 Production-grade orchestration
+
 Create EKS Cluster
 
 eksctl create cluster \--name devops-platform \--region ap-northeast-1 \--nodegroup-name workers \--node-type t3.medium \--nodes 2
@@ -199,9 +232,13 @@ eksctl create cluster \--name devops-platform \--region ap-northeast-1 \--nodegr
 Implemented Kubernetes Horizontal Pod Autoscaler (HPA).
 
 ### Features
+
 Dynamic scaling
+
 Load-based resource allocation
+
 Improved reliability
+
 Create Autoscaler
 
 kubectl autoscale deployment consumer \--cpu-percent=50 \--min=2 \--max=10
@@ -213,19 +250,28 @@ http://localhost:9090
 
 ### Grafana
 http://localhost:3000
+
 Default login:
+
 admin / admin
 
 ## 🎯 Project Outcomes
 This project demonstrates practical experience with:
 
 DevOps engineering
+
 Cloud-native infrastructure
+
 Kubernetes orchestration
+
 Infrastructure automation
+
 Monitoring & observability
+
 Event-driven systems
+
 CI/CD workflows
+
 AWS cloud deployment
 
 
@@ -233,10 +279,15 @@ AWS cloud deployment
 I Designed and deployed this cloud-native event-driven microservices platform using Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus, Grafana, and AWS EKS.
 
 ### Implemented:
+
 CI/CD automation
+
 Infrastructure as Code
+
 Monitoring & observability
+
 Kubernetes autoscaling
+
 Cloud-native deployment workflows
 
 
