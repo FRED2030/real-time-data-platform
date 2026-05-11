@@ -23,7 +23,7 @@ AWS EKS
 Terraform
 Ansible
 
-# 🐳 Containers & Orchestration
+## 🐳 Containers & Orchestration
 Docker
 Kubernetes
 Minikube
@@ -32,15 +32,15 @@ Minikube
 GitHub Actions
 Docker Hub
 
-# 📊 Monitoring & Observability
+## 📊 Monitoring & Observability
 Prometheus
 Grafana
 
-# 🧩 Streaming & Backend
+## 🧩 Streaming & Backend
 Apache Kafka
 Python
 
-# 🧠 Key Features
+## 🧠 Key Features
 ✅ Event-driven architecture
 ✅ Microservices deployment
 ✅ Dockerized services
@@ -101,7 +101,7 @@ Build Containers
 
 docker build -t producer ./producerdocker build -t consumer ./consumer
 
-# 🔄 Step 2 — CI/CD Pipeline
+## 🔄 Step 2 — CI/CD Pipeline
 Implemented CI/CD using GitHub Actions.
 
 ## CI Pipeline
@@ -205,7 +205,7 @@ CI/CD workflows
 AWS cloud deployment
 
 
-# 🧠 Professional Summary
+## 🧠 Professional Summary
 I Designed and deployed this cloud-native event-driven microservices platform using Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus, Grafana, and AWS EKS.
 
 ### Implemented:
