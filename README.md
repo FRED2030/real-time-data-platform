@@ -13,34 +13,45 @@ Monitor system health
 Implement autoscaling
 Operate in AWS cloud infrastructure
 
-## 🏗️ Architecture
-Producer Service       ↓Apache Kafka       ↓Consumer Service       ↓Prometheus Metrics       ↓Grafana Dashboards       ↓AWS EKS Kubernetes Cluster
+### 🏗️ Architecture
 
-## ⚡ Technologies Used
+Producer Service
+      ↓
+Apache Kafka
+      ↓
+Consumer Service
+      ↓
+Prometheus Metrics
+      ↓
+Grafana Dashboards
+      ↓
+AWS EKS Kubernetes Cluster
+
+### ⚡ Technologies Used
 ☁️ Cloud & Infrastructure
 AWS EC2
 AWS EKS
 Terraform
 Ansible
 
-## 🐳 Containers & Orchestration
+### 🐳 Containers & Orchestration
 Docker
 Kubernetes
 Minikube
 
-## 🔄 CI/CD
+### 🔄 CI/CD
 GitHub Actions
 Docker Hub
 
-## 📊 Monitoring & Observability
+### 📊 Monitoring & Observability
 Prometheus
 Grafana
 
-## 🧩 Streaming & Backend
+### 🧩 Streaming & Backend
 Apache Kafka
 Python
 
-## 🧠 Key Features
+### 🧠 Key Features
 ✅ Event-driven architecture
 ✅ Microservices deployment
 ✅ Dockerized services
@@ -52,7 +63,7 @@ Python
 ✅ Horizontal autoscaling
 ✅ Cloud-native deployment
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 real-time-data-platform/
 │
