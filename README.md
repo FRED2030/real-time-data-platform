@@ -1,7 +1,7 @@
 # 🚀 Real-Time Event-Driven Platform on AWS EKS
 A production-style cloud-native DevOps project demonstrating the complete lifecycle of modern infrastructure engineering using Docker, Kubernetes, Terraform, Ansible, CI/CD, Monitoring, and AWS.
 
-# 📌Project Overview
+## 📌Project Overview
 This project simulates a real-world enterprise event-driven platform inspired by modern cloud engineering practices used in large-scale environments.
 The platform processes streaming events using microservices architecture and demonstrates how to:
 
@@ -13,7 +13,7 @@ Monitor system health
 Implement autoscaling
 Operate in AWS cloud infrastructure
 
-# 🏗️ Architecture
+## 🏗️ Architecture
 Producer Service       ↓Apache Kafka       ↓Consumer Service       ↓Prometheus Metrics       ↓Grafana Dashboards       ↓AWS EKS Kubernetes Cluster
 
 ## ⚡ Technologies Used
@@ -28,7 +28,7 @@ Docker
 Kubernetes
 Minikube
 
-# 🔄 CI/CD
+## 🔄 CI/CD
 GitHub Actions
 Docker Hub
 
