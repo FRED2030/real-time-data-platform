@@ -29,26 +29,39 @@ AWS EKS Kubernetes Cluster
 
 ### ⚡ Technologies Used
 ☁️ Cloud & Infrastructure
+
 AWS EC2
+
 AWS EKS
+
 Terraform
+
 Ansible
 
 ### 🐳 Containers & Orchestration
+
 Docker
+
 Kubernetes
+
 Minikube
 
 ### 🔄 CI/CD
+
 GitHub Actions
+
 Docker Hub
 
 ### 📊 Monitoring & Observability
+
 Prometheus
+
 Grafana
 
 ### 🧩 Streaming & Backend
+
 Apache Kafka
+
 Python
 
 ### 🧠 Key Features
