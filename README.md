@@ -1,7 +1,7 @@
-# 🚀 Real-Time Event-Driven Platform on AWS EKS
+#  Real-Time Event-Driven Platform on AWS EKS
 A production-style cloud-native DevOps project demonstrating the complete lifecycle of modern infrastructure engineering using Docker, Kubernetes, Terraform, Ansible, CI/CD, Monitoring, and AWS.
 
-## 📌Project Overview
+## Project Overview
 This project simulates a real-world enterprise event-driven platform inspired by modern cloud engineering practices used in large-scale environments.
 The platform processes streaming events using microservices architecture and demonstrates how to:
 
@@ -19,12 +19,12 @@ Implement autoscaling
 
 Operate in AWS cloud infrastructure
 
-### 🏗️ Architecture
+###  Architecture
 
 ![image alt](https://github.com/FRED2030/real-time-data-platform/blob/49a9807a833125f635227c0517e6ebdefa467015/Architect.png)
 
-### ⚡ Technologies Used
-☁️ Cloud & Infrastructure
+###  Technologies Used
+ Cloud & Infrastructure
 
 AWS EC2
 
@@ -34,7 +34,7 @@ Terraform
 
 Ansible
 
-### 🐳 Containers & Orchestration
+###  Containers & Orchestration
 
 Docker
 
@@ -42,41 +42,41 @@ Kubernetes
 
 Minikube
 
-### 🔄 CI/CD
+###  CI/CD
 
 GitHub Actions
 
 Docker Hub
 
-### 📊 Monitoring & Observability
+###  Monitoring & Observability
 
 Prometheus
 
 Grafana
 
-### 🧩 Streaming & Backend
+###  Streaming & Backend
 
 Apache Kafka
 
 Python
 
-### 🧠 Key Features
-✅ Event-driven architecture
-✅ Microservices deployment
-✅ Dockerized services
-✅ Kubernetes orchestration
-✅ Infrastructure as Code (IaC)
-✅ Automated server configuration
-✅ CI/CD automation
-✅ Monitoring & observability
-✅ Horizontal autoscaling
-✅ Cloud-native deployment
+###  Key Features
+ Event-driven architecture
+ Microservices deployment
+ Dockerized services
+ Kubernetes orchestration
+ Infrastructure as Code (IaC)
+ Automated server configuration
+ CI/CD automation
+ Monitoring & observability
+ Horizontal autoscaling
+ Cloud-native deployment
 
-### 📁 Project Structure
+###  Project Structure
 
 ![image alt](https://github.com/FRED2030/real-time-data-platform/blob/45e5f75339fc6b349bf6c73e3e9d7fa28899b5a3/Structure.png)
 
-## 🐳 Step 1 — Dockerized Microservices
+##  Step 1 — Dockerized Microservices
 The producer and consumer applications were containerized using Docker.
 
 ### Purpose
@@ -90,7 +90,7 @@ Build Containers
 
 docker build -t producer ./producerdocker build -t consumer ./consumer
 
-## 🔄 Step 2 — CI/CD Pipeline
+##  Step 2 — CI/CD Pipeline
 Implemented CI/CD using GitHub Actions.
 
 ## CI Pipeline
@@ -106,7 +106,7 @@ Pushes images to Docker Hub
 
 Automates deployment workflows
 
-## ☁️ Step 3 — Infrastructure as Code
+##  Step 3 — Infrastructure as Code
 Provisioned AWS infrastructure using Terraform.
 
 ### Terraform Responsibilities
@@ -122,7 +122,7 @@ Deploy Infrastructure
 terraform init
 terraform apply
 
-## ⚙️ Step 4 — Configuration Management
+##  Step 4 — Configuration Management
 Configured infrastructure using Ansible.
 
 ### Ansible Responsibilities
@@ -137,7 +137,7 @@ Run Playbook
 
 ansible-playbook -i inventory.ini setup.yml
 
-## ☸️ Step 5 — Kubernetes Deployment
+##  Step 5 — Kubernetes Deployment
 Migrated services from Docker Compose to Kubernetes.
 
 ### Kubernetes Features
@@ -154,7 +154,7 @@ Deploy Workloads
 
 kubectl apply -f k8s/
 
-## 📊 Step 6 — Monitoring & Observability
+##  Step 6 — Monitoring & Observability
 Implemented observability using Prometheus and Grafana.
 
 Metrics Collected
@@ -170,7 +170,7 @@ Monitoring Stack
 Prometheus → metric collection
 Grafana → dashboard visualization
 
-## ☁️ Step 7 — AWS EKS Deployment
+##  Step 7 — AWS EKS Deployment
 Deployed Kubernetes workloads to AWS EKS.
 
 ### Benefits
@@ -184,7 +184,7 @@ Create EKS Cluster
 
 eksctl create cluster \--name devops-platform \--region ap-northeast-1 \--nodegroup-name workers \--node-type t3.medium \--nodes 2
 
-## 📈 Step 8 — Autoscaling
+##  Step 8 — Autoscaling
 Implemented Kubernetes Horizontal Pod Autoscaler (HPA).
 
 ### Features
@@ -199,7 +199,7 @@ Create Autoscaler
 
 kubectl autoscale deployment consumer \--cpu-percent=50 \--min=2 \--max=10
 
-## 🔍 Monitoring Dashboard
+##  Monitoring Dashboard
 
 ### Prometheus
 http://localhost:9090
@@ -211,7 +211,7 @@ Default login:
 
 admin / admin
 
-## 🎯 Project Outcomes
+##  Project Outcomes
 This project demonstrates practical experience with:
 
 DevOps engineering
@@ -231,7 +231,7 @@ CI/CD workflows
 AWS cloud deployment
 
 
-## 🧠 Professional Summary
+##  Professional Summary
 I Designed and deployed this cloud-native event-driven microservices platform using Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Prometheus, Grafana, and AWS EKS.
 
 ### Implemented:
