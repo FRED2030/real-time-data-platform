@@ -21,17 +21,7 @@ Operate in AWS cloud infrastructure
 
 ### 🏗️ Architecture
 
-Producer Service
-      ↓
-Apache Kafka
-      ↓
-Consumer Service
-      ↓
-Prometheus Metrics
-      ↓
-Grafana Dashboards
-      ↓
-AWS EKS Kubernetes Cluster
+![image alt](https://github.com/FRED2030/real-time-data-platform/blob/49a9807a833125f635227c0517e6ebdefa467015/Architect.png)
 
 ### ⚡ Technologies Used
 ☁️ Cloud & Infrastructure
