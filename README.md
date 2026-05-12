@@ -74,41 +74,7 @@ Python
 
 ### 📁 Project Structure
 
-real-time-data-platform/
-│
-├── producer/
-│   ├── producer.py
-│   ├── Dockerfile
-│   └── requirements.txt
-│
-├── consumer/
-│   ├── consumer.py
-│   ├── Dockerfile
-│   └── requirements.txt
-│
-├── terraform/
-│   └── main.tf
-│
-├── ansible/
-│   ├── inventory.ini
-│   └── setup.yml
-│
-├── monitoring/
-│   └── prometheus.yml
-│
-├── k8s/
-│   ├── producer-deployment.yml
-│   ├── consumer-deployment.yml
-│   ├── kafka-deployment.yml
-│   ├── services.yml
-│   └── grafana-service.yml
-│
-├── .github/
-│   └── workflows/
-│       ├── docker-ci.yml
-│       └── cd.yml
-│
-└── docker-compose.yml
+![image alt](https://github.com/FRED2030/real-time-data-platform/blob/45e5f75339fc6b349bf6c73e3e9d7fa28899b5a3/Structure.png)
 
 ## 🐳 Step 1 — Dockerized Microservices
 The producer and consumer applications were containerized using Docker.
